@@ -1,11 +1,7 @@
-/**
- * 
- */
 package model;
 
 import javax.persistence.Entity;
-
-import core.BaseEntity;
+import model.BaseEntity;
 
 
 @Entity
@@ -20,10 +16,12 @@ public class List extends BaseEntity {
 	}
 	
 	public List(String name) {
+
 		this();
 		this.name =name;
 	}
 
+	
 	//getters & setters
 	public String getName() {
 		return name;

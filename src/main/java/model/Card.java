@@ -5,7 +5,7 @@ package model;
 
 import javax.persistence.Entity;
 
-import core.BaseEntity;
+import model.BaseEntity;
 
 @Entity
 public class Card extends BaseEntity {
