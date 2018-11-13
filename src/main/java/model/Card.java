@@ -5,32 +5,24 @@ package model;
 
 import javax.persistence.Entity;
 
-/**
-
- * @author Matt
-
- *
- */
+import core.BaseEntity;
 
 @Entity
 public class Card extends BaseEntity {
 
 private String text;
 
+//constructors
 protected Card() {
 	super();
 }
 
-/**
- * @return the text
- */
+
+ //getters & setters
 public String getText() {
 	return text;
 }
 
-/**
- * @param text the text to set
- */
 public void setText(String text) {
 	this.text = text;
 }

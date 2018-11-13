@@ -1,4 +1,4 @@
-package model;
+package core;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +17,7 @@ public abstract class BaseEntity {
 		id = null;
 	}
 	
+	//getters & setters
 	public Long getId() {
 	return id;
 }

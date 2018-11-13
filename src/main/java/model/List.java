@@ -5,32 +5,30 @@ package model;
 
 import javax.persistence.Entity;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import core.BaseEntity;
 
-/**
- * @author Matt
 
- *
- */
 @Entity
 public class List extends BaseEntity {
 	
 	private String name;
 	
+	
+	//constructors
 	protected List() {
 		super();
 	}
+	
+	public List(String name) {
+		this();
+		this.name =name;
+	}
 
-	/**
-	 * @return the name
-	 */
+	//getters & setters
 	public String getName() {
 		return name;
 	}
 
-	/**
-	 * @param name the name to set
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
